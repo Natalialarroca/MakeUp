@@ -1,0 +1,54 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenedor-foto {
+    background-image: url(/src/imagenes/fotofondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.titulo {
+    color: v.$blanco;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 10rem;
+  
+    span {
+        font-size: 4rem;
+    }
+}
+
+
+.contenedor-eventos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background: v.$negro;
+}
+.eventos{
+    
+    margin: 0 auto;
+    padding: 0;
+    font-size: 2rem;
+
+    a {
+        text-align: center;
+        color: v.$blanco;
+        font-weight: 500;
+       
+        
+
+        &:hover {
+            color: v.$lila
+    }}}
+ 

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/scss/base/_normalize.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sedan:ital@0;1&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <title>Maquilladora Profesional</title>
+</head>
+
+
+<body id="inicio" >
+<header class="header" id="header">
+   <div class="contenedor  contenido-header"> 
+
+        
+            <img class="logo" src="/src/imagenes/LOGO.png" alt="logo-DR" width="50">
+           
+    <div class="posicion-fija">
+        <input type="checkbox" id="check">
+            <label for="check" class="mostrar-menu">
+                    &#8801
+            </label>
+            <nav class="menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre-mi">Sobre mi</a>
+                <a href="#trabajos">Trabajos</a>
+                <a href="#contacto">Contacto</a>
+
+                <label for="check" class="esconder-menu">
+                    &#215
+            </label>
+             </nav>
+     </div>       
+    </div>
+</header>
+     
+<section class="contenedor-foto">
+
+                <div>
+                    <h1 class="titulo">Professional <span>makeup</span></h1>
+                </div>
+</section>
+
+<section class="contenedor-eventos">
+    <div class="eventos">  
+        <a href="#">Maquillaje para eventos</a>
+        <a href="#">Bodas y ceremonias</a>
+        <a href="#">Curso de automaquillaje</a>
+        <a href="#">Formación Profesional</a>
+    </div>
+</section>
+
+    
+    
+<section id="sobre-mi" class="sobre-perfil"> 
+    <div class="imagen">
+        <img src="src/imagenes/fotoperfil2.jpg" width="700" alt="Denis Rossi">
+     </div> 
+
+    <div class="contenido-perfil">
+        <h2 class="titulo-dr">Denis Rossi, maquilladora profesional</h2>
+        <p>Hola, soy Denis Rossi y pongo a tu disposición mi amplia experiencia como maquilladora y peinados
+            profesionales  desde hace más de 10 años. 
+         Descubre todos los servicios que te podemos ofrecer en mi estudio para particulares, estilistas.</p>
+         <p> Mis cursos como maquilladora en Córdoba están especialmente diseñados para que aprendas lo que realmente necesitas sin pérdidas de tiempo, 
+        adaptándome a ti, ya seas una profesional o estés empezando.
+         ¡Ya no hay excusa para aprender maquillaje!</p>
+   </div>
+ </div>
+</section
+
+<section> 
+    <div id="trabajos" class="trabajos">    
+             
+                <h3 class="titulo-trabajo">Trabajos</h3>
+        <div class="contenedor-trabajos">
+
+            <div class="trabajo">
+                <div class="thumb">
+                    <img src="src/imagenes/trabajo1.jpg" width="200" alt="">
+                </div>
+                <div class="descripcion">
+                    <p class="nombre">Maquillaje artistico</p>
+                 </div>
+            </div>
+
+            <div class="trabajo">
+                <div class="thumb">
+                    <img src="src/imagenes/trabajo2.jpg" width="200">
+                </div>
+                <div class="descripcion">
+                    <p class="nombre">Maquillaje artistico</p>
+                </div>
+            </div>
+
+            <div class="trabajo">
+                <div class="thumb">
+                    <img src="src/imagenes/trabajo3.jpg"  width="200">
+                </div>
+                <div class="descripcion">
+                    <p class="nombre">Maquillaje de boda</p>
+                </div>
+            </div>
+
+            <div class="trabajo">
+                <div class="thumb">
+                    <img src="src/imagenes/trabajo4.jpg" width="200">
+                </div>
+                <div class="descripcion">
+                    <p class="nombre">Maquillaje social</p>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+      
+</section>
+
+
+
+<footer>
+        <section id="contacto" class="contenedor">
+            <div class="contacto">
+                <h3 class="titulo-contacto">Contacto</h3>
+                <form class="formulario">
+                     <input type="text" placeholder="Nombre" name="nombre" required>
+                     <input type="email" placeholder="E-mail" name="correo" required>
+                     <textarea placeholder="Mensaje:"></textarea>
+                     <input class="boton" type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+
+
+        <section class="redes-sociales">
+            <div class="contenedor">
+                <a href="https://api.whatsapp.com/send?phone=5493512093743&text=¡Hola! Me gustaría sacar un turno para maquillaje y mas información" target="_blank" class="whatsapp">    
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                
+                <a href="https://www.instagram.com/denis_rossi_maquillaje/" target="_blank" class="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="mailto:denisbrossi@gmail.com" target="_blank" class="email">
+                    <i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </section>
+ </footer>
+
+ <script src="build/js/app.js"></script>
+
+</body>
+</html>

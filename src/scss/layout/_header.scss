@@ -1,0 +1,113 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+header {
+    background-color: v.$blanco;
+    width: 100%;
+    padding: 2rem 0;
+
+
+    &.fixed{
+        position: -webkit-sticky; /* Soporte para navegadores antiguos */
+        position: sticky;
+        left: 0;
+        top: 0;
+       
+       z-index: 1000; /* Asegura que esté por encima de otros elementos */
+        transition: padding 0.3s ease;
+    }
+    }
+
+    .contenido-header{
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+.menu {
+        flex: 1;
+        text-align: center; 
+}
+  
+    a {
+        color: v.$negro;
+        text-decoration: none;
+        margin: 0 10px; /* Ajusta los márgenes entre los elementos del menú */
+        font-size: 2rem;
+
+        &:hover {
+            color: v.$rosadofuerte;
+            font-size: 2rem;
+            font-weight: 400;
+        }}
+
+.mostrar-menu,
+.esconder-menu {
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+    transition: .4s;
+
+    &:hover{
+        color: v.$rosadofuerte;
+    }
+}
+
+.mostrar-menu {
+    order: 1;
+}
+#check {
+    display: none;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px)  {
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    a {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .mostrar-menu {
+        display: block;
+        cursor: pointer;
+        font-size:70px;
+        color: v.$negro;
+        padding: 10px;
+        border: none;
+        margin: 10px 0;
+    }
+
+    .esconder-menu {
+        display: block;
+        cursor: pointer;
+        font-size: 50px;
+        color: v.$negro;
+        padding: 10px;
+        border: none;
+        align-self: flex-end;
+        margin: 10px 0;
+    }
+
+    #check:checked ~ .menu {
+        display: flex;
+    }
+
+    #check:checked ~ .mostrar-menu {
+        display: none;
+    }
+
+    #check:checked ~ .esconder-menu {
+        display: block;
+    }
+}
+    
+
+

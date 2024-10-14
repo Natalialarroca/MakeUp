@@ -1,0 +1,48 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.trabajos {
+    background: v.$negro;
+    padding: 60px 0;
+    
+
+   
+}
+.titulo-trabajo {
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: v.$lila;
+    text-align: center;
+}
+
+.contenedor-trabajos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+
+    .trabajo{
+        margin: 3rem 3rem;  
+          
+   }
+
+   .thumb {
+    width: 100%;
+    margin-bottom: 1rem;
+
+    img {
+        vertical-align: top;
+        border-radius: 3px;
+    }}
+
+    .nombre {
+        font-weight: 700;
+        color: v.$amarillo;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+
+ 
+

@@ -1,0 +1,23 @@
+{
+  "name": "web_maquilladora",
+  "version": "1.0.0",
+  "description": "sitio web de DR",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+     "dev": "gulp"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "gulp"
+  ],
+  "author": "Natalia Larroca",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.76.0"
+  }
+}
